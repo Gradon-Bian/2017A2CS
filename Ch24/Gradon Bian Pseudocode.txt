@@ -1,0 +1,51 @@
+## Gradon Bian S3C5 Opt1 (2017/11/26)
+## This is the pseudocode for my Jackson program data structure
+
+PROGRAM ProcessAuthorizationForm
+
+PROCEDURE ProcessInfo&Request
+	PROCEDURE ProcessHeader
+		INPUT Class
+		INPUT Name
+		INPUT WesternName
+		
+	PROCEDURE ReasonForAbscence
+		IF TestReason <> TURE
+			Then
+				IF CompetitionReason = TRUE
+					THEN
+						INPUT CompetitionInfo
+				ENDIF
+
+				IF MedicalReason = TRUE
+					THEN 
+						INPUT MedicalInfo
+				ENDIF
+				
+				IF Others = True
+					THEN
+						INPUT OtherInfo	
+				ENDIF		
+				
+			ELSE
+				PROCEDURE Test
+					IF ACT <> TRUE
+						THEN
+							IF SAT = TRUE
+								THEN
+									INPUT SATInfo
+							ENDIF
+							
+							IF OtherTests = TRUE
+								THEN
+									INPUT OtherTest
+							ENDIF
+
+						ELSE
+							INPUT ACTInfo	
+	PROCEDURE DATESOFLEAVE
+		INPUT Days
+		INPUT From
+		INPUT TO
+
+ENDPROCEDURE
