@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 2017A2CS
 My codes for Computer Science classwork and homework
 Here I will upload my codes (mainly in Python) from the A-Level Computer Science couse class of RDFZ, ICC.
@@ -17,3 +18,8 @@ In the search for novel sounds, increased use has been made in Western music of 
 
 
 ** You can also try this program out by inputing whatever text you want, but remeber: if the whole text has no words that repeat above two times, there will be no input!
+=======
+# My Christmas Project
+Here I will upload my design and code for my Christmas holiday project (in Python).
+Right now, I'm planning to create an algorithm that can convert an ordinary picture into a character drawing (ASCII art).
+>>>>>>> d337429d831850e300d9f37320d2db526938ae7b
