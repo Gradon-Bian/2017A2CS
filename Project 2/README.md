@@ -14,3 +14,15 @@ maze=[[1,0,0,1,0,1],
       [1,0,0,1,0,0],
       [1,0,0,0,0,1]]
 
+—————————————————————————————————————————————————————
+
+# Update: The Maze Runner V.2#
+
+## This new version can trace through a larger maze. For the maze (array),   "1" means path, and "0" means wall. After running through the maze successfully, the program will output its path by changing the "1s" it passed into "2s".## 
+
+
+
+## The entrance is from top-left corner, the exit is at the bottom-right corner.##
+
+
+
