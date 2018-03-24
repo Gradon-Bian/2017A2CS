@@ -1,0 +1,6 @@
+parent(oliver, jack).
+parent(mike, oliver).
+parent(finn, mike).
+
+ancestor(A, B) :- parent(A, B).
+ancestor(A, B) :- parent(A, X), ancestor(X, B).

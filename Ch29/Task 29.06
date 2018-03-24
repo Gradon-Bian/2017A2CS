@@ -1,0 +1,2 @@
+writeList([apple, banana, orange]).
+writeList([H|T]):- writeList(H), n1, writeList(T).
