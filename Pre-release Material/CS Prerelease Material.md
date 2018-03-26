@@ -86,7 +86,7 @@ Inheritance: all attributes and  me tho ds  of  the  base class are copied to th
 
 (Arrows completed in Task 2.1)
 
-### Task2.3
+### Task 2.3
 
 ```python
 class Toy:
