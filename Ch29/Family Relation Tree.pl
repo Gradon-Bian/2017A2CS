@@ -14,3 +14,28 @@ father(dad, brother).
 father(dad, sister).
 mother(mom, brother).
 mother(mom, sister).
+
+brother(X,Y) :-
+	male(X),
+	parent(Z,X),
+	parent(Z,Y).
+
+
+sister(X,Y) :-
+	female(X),
+	parent(Z,X),
+	parent(Z,Y).
+
+
+son(X,Y) :-
+	male(X),
+	parent(X,Y).
+
+daughter(X,Y) :-
+	female(X),
+	parent(X,Y).
+
+married(X,Y):-
+	parent(X,Z),
+	parent(Y,Z).
+
