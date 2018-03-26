@@ -111,29 +111,68 @@ class Toy:
         return(self.__Price)
     def GetMinimumAge(self):
         return(self.__MinimumAge)
-    
+  
 ```
 
 ### Task 2.4
 
 ```python
-class vehicle(toy):
-    def__init__(self,n,i,p,m,a,b,c,d):
-        toy.__init__(self,n,i,p,m)
+class vehicle(Toy):
+    def __init__(self,n,i,p,m,a,b,c,d):
+        Toy.__init__(self,n,i,p,m)
         self.type=a
         self.height=b
         self.weight=c
         self.length=d
+   def getType(self):
+        return self._type
+   def getHeight(self):
+        return self._height
+   def getLength(self):
+        return self._length
+   def getWeight(self):
+        return self._weight
+   def setType(self, type):
+        self._type = type
+   def setHeight(self, height):
+        self._height = height
+   def setLength(self, length):
+        self._length = length
+   def setWeight(self, weight):
+        self._weight = weight
+  
+    
+class ComputerGame(Toy):
+	def __init__(self, n, i, p, m, a, b):
+		Toy.__init__(self, n, i, p, m)
+		self._category = a
+		self._console = b
+	def getCategory(self):
+		return self._category
+	def setCategory(self, category):
+		self._category = category
+	def getConsole(self):
+		return self._console
+	def setConsole(self, console):
+		self._console = console
+    
 ```
 
 ### Task 2.5
 
 ```python
-try:
-    if age>0 and age<18:
-        self.age=age
-    else:
-        age=input('please input the age again')
+def setPrice(self,price):
+	if price < 0:
+		print("price must be positive")
+	else:
+    	self._price = price
+def setMinAge(self, minAge):
+	if minAge < 0:
+		print("Minimum age must be positive")
+	elif minAge > 18:
+		print("minAge too old")
+	else:
+    	self._minAge = minAge
 ```
 
 ### Task 2.6
@@ -150,19 +189,28 @@ game.append('HearthStone','ABC123',328.00,6,'TCG','None')
 ```python
 def printdetails(id):
    i=0
-   while toy[i].id!=id:
+   while Toy[i].id!=id:
         i+=1
-   Toy[i].printdetails()
+   		return self._name
+		return self._id,
+		return self._price,
+		return self._minAge
+    # For computer games, also add:*
+    	return self._category
+		return self._console
+    # For vehicles, add this instead:*
+   	 	return self._type
+		return self._height
+		return self._length
+		return self._weight
 ```
 
 ### Task 2.8
 
 ```python
-def discount(n):
-    m=n/100
-    for i in range(len(toy)):
-        toy[i].price=toy[i].price*m
-
+def discount(self, n):
+	x = (100-n)/ 100
+	self.setPrice(self._price*x)
 ```
 
 ### Task 2.9
